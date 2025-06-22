@@ -3,6 +3,10 @@
     "prettier": "3.5.3",
     "vite": "^6.3.5"
   },
+  "engines": {
+    "node": "22",
+    "npm": "10 || 11"
+  },
   "name": "starter-vite-vanilla",
   "private": true,
   "scripts": {
