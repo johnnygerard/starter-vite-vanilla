@@ -1,16 +1,16 @@
 {
+  "devDependencies": {
+    "prettier": "3.5.3",
+    "vite": "^6.3.5"
+  },
   "name": "starter-vite-vanilla",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
+    "dev": "vite",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "prettier": "3.5.3",
-    "vite": "^6.3.5"
-  }
+  "type": "module"
 }
