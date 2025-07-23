@@ -30,6 +30,7 @@ export default defineConfig([
   },
   {
     files: ["**/*.css"],
+    ignores: ["src/style/preflight.css"],
     plugins: { css },
     language: "css/css",
     extends: ["css/recommended"],

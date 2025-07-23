@@ -1,0 +1,6 @@
+@layer base;
+@import "preflight.css" layer(base);
+
+h1 {
+  color: blue;
+}
