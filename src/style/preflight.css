@@ -1,8 +1,7 @@
 /*
-  This stylesheet is a modified version of Tailwind CSS's Preflight (font configuration has been removed).
-  Tailwind CSS Version: 4.1.11
-  https://tailwindcss.com/docs/preflight
-  https://github.com/tailwindlabs/tailwindcss/blob/main/packages/tailwindcss/preflight.css
+  This stylesheet is a slightly modified version of Tailwind CSS's Preflight.
+  It has been adapted to work with vanilla CSS.
+  Preflight v4.1.11: https://tailwindcss.com/docs/preflight
 */
 
 /*
@@ -26,7 +25,8 @@
   1. Use a consistent sensible line-height in all browsers.
   2. Prevent adjustments of font size after orientation changes in iOS.
   3. Use a more readable tab size.
-  7. Disable tap highlights on iOS.
+  4. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+  5. Disable tap highlights on iOS.
 */
 
 html,
@@ -34,8 +34,10 @@ html,
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   tab-size: 4; /* 3 */
-  /* Note: Tailwind CSS sans serif font configuration has been removed */
-  -webkit-tap-highlight-color: transparent; /* 7 */
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji"; /* 4 */
+  -webkit-tap-highlight-color: transparent; /* 5 */
 }
 
 /*
@@ -93,15 +95,17 @@ strong {
 }
 
 /*
-  4. Correct the odd `em` font sizing in all browsers.
+  1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+  2. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
 kbd,
 samp,
 pre {
-  /* Note: Tailwind CSS monospace font configuration has been removed */
-  font-size: 1em; /* 4 */
+  font-family:
+    ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /*
