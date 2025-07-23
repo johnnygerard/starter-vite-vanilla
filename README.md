@@ -30,7 +30,7 @@ To check for outdated packages, run `npm outdated`.
 ```bash
 # Update dependencies (this will rewrite package-lock.json and package.json)
 npm update --save
-npm install --save-exact --save-dev prettier@latest prettier-plugin-tailwindcss@latest
+npm install --save-exact --save-dev prettier@latest
 ```
 
 ## Dev Environment & Tools
